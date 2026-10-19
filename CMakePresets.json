@@ -11,7 +11,15 @@
             "binaryDir": "build/dev",
             "cacheVariables": {
                 "CMAKE_EXPORT_COMPILE_COMMANDS": true,
-                "RISE_OF_MONSTERS_SIMULATION_BUILD_TESTS": true
+                "RISE_OF_MONSTERS_SIMULATION_BUILD_TESTS": true,
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+        },
+        {
+            "name": "release",
+            "binaryDir": "build/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
             }
         }
     ]
